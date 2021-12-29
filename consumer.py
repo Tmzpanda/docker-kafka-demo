@@ -1,3 +1,5 @@
+import os
+import shutil
 from typing import Dict
 from kafka import KafkaConsumer
 import json
@@ -34,7 +36,7 @@ def transform(info: Dict):
 
 
 def append_to_file(msg, file):
-    with open(file, 'a') as f:
+    with open(f"temp/{file}", 'a') as f:
         f.write(msg + '\n')
 
     f.close()
