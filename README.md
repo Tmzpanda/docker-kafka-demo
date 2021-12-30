@@ -1,6 +1,6 @@
 # stackpath-kafka-demo
 ### Enviroment setup
-- `docker-compose.yml` contains the steps of local instance setup
+- `docker-compose.yml` contains the steps of local kafka instance setup
 - Use below command to create the topic    
 `./bin/kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic stackpath-interview-homework` 
 
