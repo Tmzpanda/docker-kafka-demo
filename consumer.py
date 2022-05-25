@@ -13,7 +13,7 @@ consumer = KafkaConsumer(
     value_deserializer=lambda m: json.loads(m.decode("utf-8")),
     group_id="stackpath-consumer",
     enable_auto_commit=True,
-    auto_offset_reset='latest',
+    auto_offset_reset='earliest',
     consumer_timeout_ms=10000
 )
 
